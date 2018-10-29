@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="css/metro-all.min.css">
+  </head>
+
+
+  <body>
+	<aside class="sidebar pos-absolute z-2"
+		   data-role="sidebar"
+		   data-toggle="#sidebar-toggle-4"
+		   id="sb4"
+		   data-shift=".shifted-content-2"
+		   data-static-shift=".shifted-content-2"
+		   data-static="md">
+
+		<div class="sidebar-header" data-image="images/paintings/picasso.jpg">
+			<div class="avatar">
+				<img src="images/olshanskysmall.jpg" data-email="chob77@gmail.com">
+			</div>
+			<span class="title fg-magenta">Trabajo Práctico Química</span>
+			<span class="subtitle fg-magenta">Christian Borneo, UNTREF. © 2018</span>
+		</div>
+		<ul class="sidebar-menu">
+			<li><a href="index.html" ><span class="mif-home icon"></span>Home</a></li>
+			<li><a href="agenda.html" ><span class="mif-books icon"></span>Agenda de Elementos</a></li>
+			<li><a href="estequio.html" ><span class="mif-files-empty icon"></span>Estequiometría</a></li>
+			<li class="divider"></li>
+			<!-- <li><a><span class="mif-images icon"></span>Icons</a></li> -->
+		</ul>
+	</aside>
+	<div class="shifted-content-2 h-100 p-ab">
+		<div class="appbar pos-absolute bg-red z-1" data-role="appbar">
+			<button class="app-bar-item c-pointer" id="sidebar-toggle-4">
+				<span class="mif-menu fg-white"></span>
+			</button>
+		</div>
+
+		<div class="h-100 p-4">
+			<p class="h1">Trabajo Páctico: QUÍMICAPP</p>
+			<p align="justify">
+				El presente trabajo práctico fue desarrollado para cumplimentar la solicitud de la cátedra de Química de la UNTREF.
+				El mismo consta de una aplicación web con múltiples propositos. Cada uno de ellos denotados como títulos en la barra paralela de manúes.
+			</p>
+			<p align="justify">
+				Mediante la participación interactiva con la aplicación el usuario podrá obtener información y respuestas a sus planteos. Para su implementación se utilizó el framework <i>Metro 4, HTML5 y Jquery</i>
+			</p>
+			<!-- <h1>Hello, world!</h1> -->
+			<br><br><br>
+			<h1 class="text-center">Metro 4</h1>
+			<h3 class="text-center">The Components Library</h3>
+			<div data-role="cube"></div>
+		</div>
+	</div>
+
+    <!-- jQuery first, then Metro UI JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/metro.min.js"></script>
+  </body>
+</html>

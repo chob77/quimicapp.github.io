@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Requiamber meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="css/metro-all.min.css">
+  </head>
+
+
+  <body>
+	<aside class="sidebar pos-absolute z-2"
+		   data-role="sidebar"
+		   data-toggle="#sidebar-toggle-4"
+		   id="sb4"
+		   data-shift=".shifted-content-2"
+		   data-static-shift=".shifted-content-2"
+		   data-static="md">
+
+		<div class="sidebar-header" data-image="images/paintings/munk.jpg">
+			<div class="avatar">
+				<img src="images/olshanskysmall.jpg" data-email="chob77@gmail.com">
+			</div>
+			<span class="title fg-white">Trabajo Práctico Química</span>
+			<span class="subtitle fg-white">Christian Borneo, UNTREF. © 2018</span>
+		</div>
+
+		<ul class="sidebar-menu">
+			<li><a href="index.html" ><span class="mif-home icon"></span>Home</a></li>
+			<li><a href="agenda.html" ><span class="mif-books icon"></span>Agenda de Elementos</a></li>
+			<li><a href="estequio.html" ><span class="mif-files-empty icon"></span>Estequiometría</a></li>
+			<li class="divider"></li>
+			<!-- <li><a><span class="mif-images icon"></span>Icons</a></li> -->
+		</ul>
+	</aside>
+
+
+	<div class="shifted-content-2 h-100 p-ab">
+		<div class="appbar pos-absolute bg-magenta h1 z-1" data-role="appbar">
+			<button class="app-bar-item c-pointer" id="sidebar-toggle-4">
+				<span class="mif-menu fg-white"></span>
+			</button>
+		</div>
+
+		<div class="h-100 p-4">
+			<p class="h1 fg-green">Balanceo de fórmulas<hr class="bg-green"></p>
+			<!-- <p> -->
+
+			<div class="border bd-cyan grid"><!--abre GRID-->
+				<div class="row"><!--abre ROW-->
+					<div class="cell"><div><!--abre CELL-->
+
+						<ul data-role="tabs" data-expand="sm">
+							<li><a href="#_target_1">Características</a></li>
+						</ul>
+
+						<div class="border bd-default no-border-top p-2">
+
+							<p>Esta sección te permitirá chequear si una fórmula química esta balanceada en sus masas.</p>
+
+							<p>Fórmulas de ejemplo.</p>
+							<span>EJ 1: CH4 + O2 = H2O + CO2</span><br>
+							<span>EJ 2: 2HCl + Na2S = H2S + 2NaCl</span><br>
+							<span>EJ 3: F(g) + 2CIO(g) = 2FCIO2(g)</span><br>
+							<div id="_target_1">
+
+								<br><label for="frm_estequio" >Ingresá la fórmula.</label>
+								<input id="frm_estequio" type="text" data-role="input" class=""><br>
+
+								<table class="table compact table-border cell-border row-hover striped">
+									<tbody>
+									<!-- <thead> -->
+										<tr align="center">
+											<th>&nbsp;</th>
+											<th id="compuesto0">&nbsp;</th>
+											<th id="compuesto1">&nbsp;</th>
+											<th id="compuesto2" style="display:none;">&nbsp;</th>
+											<th id="compuesto3" style="display:none;">&nbsp;</th>
+											<th id="compuesto4" style="display:none;">&nbsp;</th>
+											<th id="compuesto5" style="display:none;">&nbsp;</th>
+										</tr>
+									<!-- </thead> -->
+
+									<!-- <tbody> -->
+										<tr align="center">
+											<td>mol</td>
+											<td id="mol0">&nbsp;</td>
+											<td id="mol1">&nbsp;</td>
+											<td id="mol2" style="display:none;">&nbsp;</td>
+											<td id="mol3" style="display:none;">&nbsp;</td>
+											<td id="mol4" style="display:none;">&nbsp;</td>
+											<td id="mol5" style="display:none;">&nbsp;</td>
+										</tr>
+
+										<tr align="center">
+											<td>masa</td>
+											<td id="masa0">&nbsp;</td>
+											<td id="masa1">&nbsp;</td>
+											<td id="masa2" style="display:none;">&nbsp;</td>
+											<td id="masa3" style="display:none;">&nbsp;</td>
+											<td id="masa4" style="display:none;">&nbsp;</td>
+											<td id="masa5" style="display:none;">&nbsp;</td>
+										</tr>
+
+										<tr align="center">
+											<td>masa total</td>
+											<td id="masaReactivos" style="background-color:lightgrey;">&nbsp;</td>
+											<td id="masaProductos" style="background-color:lightgrey;">&nbsp;</td>
+										</tr>
+
+										<tr id="desbalanceo" align="center" style="display:none; background-color:lightgrey;">
+											<td>desbalanceo</td>
+											<td id="desbalanceo_resultado" style="background-color:lightgrey;"><i>La fórmula presentada está desbalanceada.</i></td>
+										</tr>
+
+										<tr id="propuesta" align="center" style="display:none; background-color:aquamarine;">
+											<td>Fórmula Popuesta</td>
+											<td id="formula_propuesta" style="background-color:aquamarine;"><i></i></td>
+										</tr>
+
+
+									</tbody>
+								</table>
+
+							</div><!--ciera _target_1-->
+						</div>
+
+					</div></div><!--abre CELL-->
+
+				</div><!--ciera ROW-->
+			</div><!--Cierra GRID-->
+
+			<!-- </p> -->
+		</div>
+	</div>
+
+    <!-- jQuery first, then Metro UI JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/metro.min.js"></script>
+    <script src="js/estequio.js"></script>
+    <script src="js/tabla.js"></script>
+  </body>
+</html>
