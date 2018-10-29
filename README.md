@@ -1,4 +1,4 @@
-# quimicapp.github.io
+# QUÍMICAPP
 
 Trabajo Páctico: QUÍMICAPP
 
